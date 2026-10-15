@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#faf7f0" />
+  <meta name="description" content="Nguyễn Ngọc Thạch — một chút tò mò, một chút táo bạo và rất nhiều điều đang được tạo ra. Portfolio tương tác mang cảm hứng triển lãm nghệ thuật." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ngọc Thạch — A Little Universe" />
+  <meta property="og:description" content="Mỗi ý tưởng đều xứng đáng có một thế giới riêng." />
+  <meta property="og:image" content="./assets/og-cover.svg" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles.css" />
+  
+  
+  <title>Ngọc Thạch — A Little Universe</title>
+</head>
+<body data-sky="apricot">
+  <a class="skip-link" href="#main">Bỏ qua menu</a>
+  <div class="page-progress" aria-hidden="true"><span id="page-progress"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar" id="top">
+    <a href="#top" class="wordmark" aria-label="Ngọc Thạch — về đầu trang">thạch<span class="wordmark-dot">.</span><span class="wordmark-small">studio of one</span></a>
+    <nav class="desktop-nav" aria-label="Điều hướng chính">
+      <a href="#about">Mình là ai</a>
+      <a href="#work">Những điều đã làm</a>
+      <a href="#beyond">Ngoài khuôn khổ</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="light-switch" id="light-switch" type="button" aria-label="Đổi sắc trời" title="Đổi sắc trời"><span class="switch-sun" aria-hidden="true">✳</span><span>Đổi sắc trời</span></button>
+      <a class="topbar-hello" href="#contact">Nói lời chào <span aria-hidden="true">↗</span></a>
+      <button class="menu-trigger" id="menu-trigger" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Mở menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Điều hướng di động" inert>
+    <a href="#about">Mình là ai <span>01</span></a><a href="#work">Những điều đã làm <span>02</span></a><a href="#beyond">Ngoài khuôn khổ <span>03</span></a><a href="#contact">Nói lời chào <span>04</span></a>
+  </nav>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-halo" aria-hidden="true"></div>
+      <div class="hero-intro"><span class="eyebrow-line"></span> HELLO, IT'S ME — NGỌC THẠCH <span class="hero-year">© 2026</span></div>
+      <div class="hero-copy">
+        <div class="hero-scribble" aria-hidden="true">✳</div>
+        <h1 id="hero-title">Một cuộc đời.<br/><span class="indent">Vô vàn</span><br/><em>thế giới nhỏ.</em></h1>
+        <p class="hero-description">Mình là <strong>Nguyễn Ngọc Thạch</strong>. Một người thích biến những ý tưởng trong đầu thành thứ mà người khác có thể chạm, chơi và cảm nhận.</p>
+        <div class="hero-actions"><a class="button-round" href="#work"><span>Khám phá thế giới của mình</span><span class="button-circle" aria-hidden="true">↗</span></a><span class="hero-note">Kéo xuống một chút nhé <span aria-hidden="true">↓</span></span></div>
+      </div>
+      <div class="sculpture-zone" aria-hidden="true">
+        <canvas id="world-canvas" class="world-canvas"></canvas>
+        <div class="sculpture-fallback"><span class="fallback-loop loop-a"></span><span class="fallback-loop loop-b"></span><span class="fallback-core"></span></div>
+        <span class="sculpture-label sculpture-label-left">a little<br/>universe</span><span class="sculpture-label sculpture-label-right">made of<br/>curiosity ✳</span>
+      </div>
+      <div class="hero-side-note">A SELF-PORTRAIT, BUT NOT QUITE.</div>
+      <div class="hero-bottom"><span>HÀ NỘI, VIỆT NAM <span class="hero-divider">✳</span> EVERYWHERE ONLINE</span><a href="#about" aria-label="Cuộn đến phần giới thiệu" class="scroll-gesture"><span>SCROLL TO WANDER</span><span class="scroll-icon" aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>MAKE THINGS FEEL ALIVE ✳ STAY CURIOUS ✳ BUILD WITH HEART ✳ MAKE THINGS FEEL ALIVE ✳ STAY CURIOUS ✳ BUILD WITH HEART ✳ </span><span>MAKE THINGS FEEL ALIVE ✳ STAY CURIOUS ✳ BUILD WITH HEART ✳ MAKE THINGS FEEL ALIVE ✳ STAY CURIOUS ✳ BUILD WITH HEART ✳ </span></div></div>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="section-kicker reveal"><span class="chapter-number">01 / 04</span><span>THE PERSON BEHIND THE PIXELS</span><span class="section-star">✳</span></div>
+      <div class="about-grid">
+        <div class="about-left reveal"><div class="mini-poster"><div class="poster-sun"></div><span class="poster-script">always<br/>becoming.</span><span class="poster-foot">NGỌC THẠCH / ISSUE NO. 01</span></div><span class="poster-caption">Không ngừng trở thành phiên bản tốt hơn của chính mình.</span></div>
+        <div class="about-right reveal"><h2 id="about-title">Không có một cái nhãn nào <em>nói hết về mình.</em></h2><p class="about-lead">Ban ngày mình làm việc cùng dữ liệu và vận hành kho. Ngoài giờ, mình bước vào thế giới của game, ứng dụng và những trải nghiệm do chính mình tạo ra.</p><p>Hiện tại, mình làm trong mảng <strong>Warehouse Data / SAP EWM Operations tại VinFast</strong>, nơi sự chính xác và tư duy hệ thống là chuyện mỗi ngày. Nhưng trí tò mò thì không dừng lại lúc tan ca.</p><div class="about-facts"><div><span>HIỆN TẠI</span><strong>VinFast</strong><small>Warehouse Data · SAP EWM</small></div><div><span>HÀNH TRÌNH HỌC</span><strong>FPT Polytechnic</strong><small>Công nghệ thông tin</small></div><div><span>ĐIỀU MÌNH THÍCH</span><strong>Tạo ra cái mới</strong><small>Game · Mobile · Web · Trải nghiệm</small></div></div></div>
+      </div>
+    </section>
+
+    <section class="work section-pad" id="work" aria-labelledby="work-title">
+      <div class="section-kicker reveal"><span class="chapter-number">02 / 04</span><span>SELECTED WORLDS & EXPLORATIONS</span><span class="section-star">✳</span></div>
+      <div class="work-header reveal"><h2 id="work-title">Nghĩ được.<br/><em>Làm được.</em></h2><div class="work-header-side"><p>Những thứ mình đã bỏ thời gian, công sức và cả một chút lì lợm vào để biến từ ý tưởng thành trải nghiệm thật.</p><span>↓ CÙNG NGÓ QUA NHÉ</span></div></div>
+      <div class="project-grid">
+        <article class="project-card project-arcade reveal" tabindex="0"><div class="project-visual arcade-visual" aria-hidden="true"><span class="arcade-disc disc-back"></span><span class="arcade-disc disc-front"></span><span class="arcade-flower">✳</span><span class="art-index">01 — PLAY</span></div><div class="project-info"><div><span class="project-category">GAME & IMAGINATION</span><h3>Những thế giới để chơi</h3><p>Từ Ngọc Rồng Online, Ninja School đến các client Unity và LibGDX — mình thích cảm giác thổi sự sống vào một thế giới có thể tương tác.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div></article>
+        <article class="project-card project-mobile reveal" tabindex="0"><div class="project-visual mobile-visual" aria-hidden="true"><div class="visual-window"><span class="window-sun"></span><span class="window-hill hill-one"></span><span class="window-hill hill-two"></span><span class="window-label">little<br/>moments.</span></div><span class="art-index">02 — CREATE</span></div><div class="project-info"><div><span class="project-category">APPS & EXPERIENCES</span><h3>Ứng dụng có cảm xúc</h3><p>Ứng dụng mobile React Native, trải nghiệm cá nhân hoá và những website dành cho các khoảnh khắc đáng nhớ.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div></article>
+        <article class="project-card project-data reveal" tabindex="0"><div class="project-visual data-visual" aria-hidden="true"><span class="data-arch arch-one"></span><span class="data-arch arch-two"></span><span class="data-sphere"></span><span class="data-caption">order inside<br/>the chaos.</span><span class="art-index">03 — ORGANIZE</span></div><div class="project-info"><div><span class="project-category">OPERATIONS & CLARITY</span><h3>Biến phức tạp thành rõ ràng</h3><p>Dữ liệu kho, luồng vận hành SAP EWM và báo cáo Power BI — nơi mình luyện cách quan sát vấn đề và giải quyết đến tận gốc.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div></article>
+        <article class="project-card project-web reveal" tabindex="0"><div class="project-visual web-visual" aria-hidden="true"><span class="web-orbit orbit-one"></span><span class="web-orbit orbit-two"></span><span class="web-flower">✴</span><span class="art-index">04 — DREAM</span></div><div class="project-info"><div><span class="project-category">PERSONAL INTERNET</span><h3>Những góc nhỏ trên Internet</h3><p>Một trang quà 20/10, các dự án cộng đồng, và cả những ý tưởng 3D tưởng chừng hơi điên — để Internet vui hơn một chút.</p></div><a class="project-arrow project-link" href="https://github.com/thachdeptrai/20-10" target="_blank" rel="noopener noreferrer" aria-label="Xem dự án 20-10 trên GitHub">↗</a></div></article>
+      </div><a class="all-work-link reveal" href="https://github.com/thachdeptrai" target="_blank" rel="noopener noreferrer">XEM GÓC GITHUB CỦA MÌNH <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="beyond section-pad" id="beyond" aria-labelledby="beyond-title">
+      <div class="section-kicker reveal"><span class="chapter-number">03 / 04</span><span>A FEW THINGS I BELIEVE</span><span class="section-star">✳</span></div>
+      <div class="beyond-inner"><div class="beyond-intro reveal"><h2 id="beyond-title">Mình không muốn chỉ<br/><em>đi theo đường thẳng.</em></h2><p>Thế giới đủ rộng để thử thêm một điều mới. Có lúc là tối ưu một quy trình. Có lúc lại là ngồi hàng giờ chỉnh một chuyển động chỉ vì… nó chưa đủ đẹp.</p></div><div class="belief-stack"><div class="belief reveal"><span class="belief-icon">✦</span><div><span>01 / SỰ TÒ MÒ</span><h3>Hỏi thêm một câu “nếu như?”</h3></div></div><div class="belief reveal"><span class="belief-icon">◌</span><div><span>02 / SỰ CHỈN CHU</span><h3>Chi tiết nhỏ vẫn đáng để tâm.</h3></div></div><div class="belief reveal"><span class="belief-icon">↝</span><div><span>03 / SỰ DÁM THỬ</span><h3>Chưa biết thì học. Chưa có thì làm.</h3></div></div></div></div>
+      <div class="postcard reveal"><div class="postcard-stamp">MADE WITH<br/>A LITTLE<br/>WONDER ✳</div><p>“Mình muốn làm những thứ khiến người ta phải dừng lại thêm vài giây.”</p><span>— NGỌC THẠCH</span><div class="postcard-orb" aria-hidden="true"></div></div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title"><div class="section-kicker reveal"><span class="chapter-number">04 / 04</span><span>THE NEXT LITTLE ADVENTURE</span><span class="section-star">✳</span></div><div class="contact-content reveal"><p class="contact-overline">BẠN CÓ MỘT Ý TƯỞNG HAY HO?</p><h2 id="contact-title">Cùng tạo ra<br/><em>điều gì đó đẹp nhé.</em></h2><a class="contact-pill" href="mailto:ngocthachgenz@gmail.com?subject=Hello%20Ngoc%20Thach"><span>GỬI MÌNH MỘT LỜI CHÀO</span><span aria-hidden="true">↗</span></a><div class="contact-footer"><a href="mailto:ngocthachgenz@gmail.com">ngocthachgenz@gmail.com</a><a href="https://github.com/thachdeptrai" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div><div class="contact-decoration" aria-hidden="true"><span>✳</span></div></section>
+  </main>
+  <footer class="footer"><a class="footer-wordmark" href="#top">thạch<span>.</span></a><p>© 2026 Nguyễn Ngọc Thạch. Made with curiosity, not templates.</p><a href="#top">BACK TO TOP ↑</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script defer src="./src/main.js"></script>
+<script defer src="./src/scene.js"></script>
+</body>
+</html>
