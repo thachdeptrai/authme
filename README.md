@@ -26,7 +26,14 @@ Then visit `http://localhost:8080`. The only optional network dependency is Goog
 **Repository:** `thachdeptrai/authme`  
 **Desired URL:** `https://thachdeptrai.github.io/authme/`
 
-Go to **Settings → Pages → Build and deployment → Source: Deploy from a branch**, choose `main` and `/(root)`, then save. The code uses relative paths, so it works on a GitHub Pages project path without modification. If repository settings permit publishing automatically, GitHub will pick up commits to `main`.
+**One-time GitHub Pages activation is required for a new repository:**
+
+1. Open [Repository Settings → Pages](https://github.com/thachdeptrai/authme/settings/pages).
+2. Under **Build and deployment**, set **Source = GitHub Actions** (not “Deploy from a branch”).
+3. Open [Actions → Test & publish A Little Universe](https://github.com/thachdeptrai/authme/actions/workflows/pages.yml) and choose **Run workflow** if the initial run failed before Pages was activated.
+4. Wait for a green workflow run, then open [https://thachdeptrai.github.io/authme/](https://thachdeptrai.github.io/authme/).
+
+Every subsequent push to `main` will run zero-dependency checks and publish automatically. GitHub does not permit the default workflow token to activate Pages on behalf of a user; the initial Settings choice is necessary. All page paths are relative and work on the project subpath.
 
 ## Project layout
 
@@ -35,7 +42,7 @@ Go to **Settings → Pages → Build and deployment → Source: Deploy from a br
 - `src/main.js`: interactions, accessible dialogs, menu and colour moods
 - `src/scene.js`: entirely standalone WebGL scene and fallback
 - `assets/*.svg`: favicon and social preview art
-- `tests/smoke.py`: Playwright smoke test for desktop, mobile and accessibility essentials
+- `tests/ci_check.py`: CI HTML, asset and semantics verification (Python stdlib)\n- `tests/smoke.py`: optional Playwright smoke test for desktop and mobile browsers
 
 ## Editorial accuracy
 
